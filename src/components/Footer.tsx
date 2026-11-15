@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp } from 'lucide-react';
+import { ArrowUp, Instagram, Youtube } from 'lucide-react';
 import { ContactButton } from './ContactButton';
 
 interface FooterProps {
@@ -24,6 +24,28 @@ export const Footer: React.FC<FooterProps> = ({ onContactClick, onNavigate }) =>
 
         <div className="mb-14">
           <ContactButton onClick={onContactClick} label="Get in Touch" />
+        </div>
+
+        <div className="mb-8 flex flex-wrap items-center justify-center gap-4">
+          <a
+            href="https://www.youtube.com/@hvs_thenics"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 rounded-full border border-[#D7E2EA]/20 bg-white/5 px-4 py-2 text-[10px] uppercase tracking-[0.22em] text-[#D7E2EA]/80 transition-all duration-200 hover:border-[#D7E2EA]/40 hover:text-white hover:bg-white/10"
+          >
+            <Youtube size={16} />
+            <span>YouTube</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/hvsthenics/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2 rounded-full border border-[#D7E2EA]/20 bg-white/5 px-4 py-2 text-[10px] uppercase tracking-[0.22em] text-[#D7E2EA]/80 transition-all duration-200 hover:border-[#D7E2EA]/40 hover:text-white hover:bg-white/10"
+          >
+            <Instagram size={16} />
+            <span>Instagram</span>
+          </a>
         </div>
 
         <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 border-t border-[#D7E2EA]/10 text-xs uppercase tracking-widest text-[#D7E2EA]/60">
