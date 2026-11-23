@@ -36,11 +36,11 @@ const PROJECTS: ProjectItem[] = [
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85',
   },
   {
-    id: 'Script Writing Page',
+    id: 'Thumbnail design',
     number: '03',
-    name: 'Script Writing Page',
+    name: 'Thumbnail design',
     category: 'Client',
-    type: 'Writing a script for a video based on a prompt or idea.',
+    type: 'Catchy and attractive thumbnails for clients.',
     liveUrl: 'https://solaris-digital.art',
     col1Image1:
       'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055759_963cfb0b-4bd1-4b0f-9d0a-09bd6cf95b2f.png&w=1280&q=85',
