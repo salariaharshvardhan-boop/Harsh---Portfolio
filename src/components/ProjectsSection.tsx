@@ -1,3 +1,4 @@
+import { VideoGallery } from './VideoGallery';
 import React, { useRef, useState } from 'react';
 import { useScroll } from 'framer-motion';
 import { FadeIn } from './FadeIn';
