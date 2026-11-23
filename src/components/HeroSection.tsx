@@ -55,7 +55,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* 2. Hero Heading */}
       <div className="w-full overflow-x-clip z-0 select-none text-center">
         <FadeIn delay={0.15} y={40} className="w-full">
-          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[8vw] sm:text-[7.5vw] md:text-[8vw] lg:text-[8.5vw] mt-6 sm:mt-4 md:-mt-5">
+          <h1 className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-[8vw] ">
             Hi, i&apos;m harshvardhan
           </h1>
         </FadeIn>
