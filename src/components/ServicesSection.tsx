@@ -20,9 +20,9 @@ const SERVICES: ServiceItem[] = [
   {
     id: 'Thumbnail Design',
     number: '03',
-    name: 'Script Writing',
+    name: 'Thumbnail Design',
     description:
-      'Writing a script for a video based on a prompt or idea.',
+      'Catchy and attractive thumbnails for clients.',
   },
   {
     id: 'Website Design',
