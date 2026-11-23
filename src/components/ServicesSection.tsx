@@ -18,7 +18,7 @@ const SERVICES: ServiceItem[] = [
       'Using AI to generate professional trending videos with a catchy title and description.',
   },
   {
-    id: 'Script Writing',
+    id: 'Thumbnail Design',
     number: '03',
     name: 'Script Writing',
     description:
