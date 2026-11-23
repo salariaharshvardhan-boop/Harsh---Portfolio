@@ -101,6 +101,8 @@ export const ProjectsSection: React.FC = () => {
             );
           })}
         </div>
+
+        <VideoGallery />
       </div>
 
       {/* Project Detail / Live View Modal */}
