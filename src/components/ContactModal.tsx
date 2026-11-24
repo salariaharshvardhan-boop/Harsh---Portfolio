@@ -13,7 +13,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    projectType: '3D Modeling & Rendering',
+    projectType: 'Video Editing',
     budget: '$100 - $1000',
     message: '',
   });
