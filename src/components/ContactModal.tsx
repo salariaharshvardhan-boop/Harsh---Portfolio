@@ -79,7 +79,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
   const [copied, setCopied] = useState(false);
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
-  const [honeypot, setHoneypot] = useState('');
+  const [honeypot, setHoneypot] = useState(false);
   const [formData, setFormData] = useState(initialForm);
 
   const email = 'salariaharshvardhan@gmail.com';
@@ -113,9 +113,10 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
     e.preventDefault();
     if (status === 'sending') return;
 
-    // Bots fill hidden fields; silently pretend success.
+    // Bots tick the hidden box. Never show success unless the message was really sent.
     if (honeypot) {
-      setStatus('success');
+      setStatus('error');
+      setErrorMsg('Your message was not sent. Please email me directly using the address above.');
       return;
     }
 
@@ -144,7 +145,6 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
           service: formData.projectType,
           budget: formData.budget,
           message: formData.message,
-          botcheck: '',
         }),
       });
 
@@ -262,11 +262,12 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Honeypot (hidden from humans) */}
                 <input
-                  type="text"
+                  type="checkbox"
+                  name="botcheck"
                   tabIndex={-1}
                   autoComplete="off"
-                  value={honeypot}
-                  onChange={(e) => setHoneypot(e.target.value)}
+                  checked={honeypot}
+                  onChange={(e) => setHoneypot(e.target.checked)}
                   className="hidden"
                   aria-hidden="true"
                 />
